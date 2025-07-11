@@ -21,12 +21,25 @@
       text-align: center;
       box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      opacity: 0.85;
+    }
+
     nav {
       background: #0077cc;
       padding: 12px 0;
       display: flex;
       justify-content: center;
       gap: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       flex-wrap: wrap;
     }
     nav a {
@@ -37,40 +50,89 @@
       border-radius: 25px;
       background-color: rgba(255 255 255 / 0.15);
       transition: background-color 0.3s ease, transform 0.2s ease;
+      font-size: 1.05rem;
+      white-space: nowrap;
     }
     nav a:hover {
       background-color: #005f99;
       transform: scale(1.05);
     }
+
     .container {
       max-width: 900px;
       background: white;
-      margin: 30px auto;
+      margin: 30px auto 60px auto;
       padding: 30px 25px;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
       line-height: 1.8;
+      color: #0a2a48;
     }
+
+    h1, h2, h3 {
+      color: #003344;
+      margin-top: 1.3em;
+      margin-bottom: 0.6em;
+    }
+    ol, ul {
+      padding-inline-start: 20px;
+      margin-top: 0;
+    }
+    ol li, ul li {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
     img {
       display: block;
       max-width: 100%;
       margin: 25px auto;
       border-radius: 15px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+
     footer {
       background: linear-gradient(90deg, #004466, #002d40);
       color: white;
       text-align: center;
       padding: 18px 15px;
       font-weight: 600;
+      letter-spacing: 0.03em;
+      box-shadow: 0 -3px 8px rgba(0,0,0,0.15);
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+      }
+      nav a {
+        padding: 12px 18px;
+        font-size: 1.2rem;
+        border-radius: 35px;
+      }
+      .container {
+        margin: 20px 15px 50px 15px;
+        padding: 25px 15px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>الضغط والاحتواء الكوني: إطار نظري</h1>
-    <p>كتابة: عثمان مدني، باحث مستقل، باكستان<br>البريد الإلكتروني: madniusman13@gmail.com</p>
+    <p>كتابة: عثمان مدني، باحث مستقل، باكستان<br />البريد الإلكتروني: madniusman13@gmail.com</p>
   </header>
 
   <nav>
@@ -78,95 +140,89 @@
     <a href="urdu.html">اردو</a>
     <a href="arabic.html">عربي</a>
     <a href="argument.html">الجدل العلمي</a>
+    <a href="urdu-argument.html">دلائل</a>
   </nav>
 
   <div class="container">
     <h2>الملخص</h2>
     <p>
-      يقدم هذا المقال نظرية "الضغط والاحتواء الكوني" (CPC) التي تستند إلى فكرة أن الكون يحافظ على هيكله من خلال توازن بين الضغط الداخلي وقوة الاحتواء الخارجي. تتحدى هذه النظرية نموذج الجاذبية الوحيد في تفسير تمدد الكون، حركة المجرات، وسلوك الضوء بناءً على الضغط.
+      تقدم نظرية الضغط والاحتواء الكوني (CPC) تصورًا جديدًا لفهم بنية الكون يقوم على توازن بين الضغط الداخلي والاحتواء الخارجي. هذا النموذج يتحدى الفرضية السائدة بأن الجاذبية وحدها تفسر التمدد الكوني واستقراره.
     </p>
 
     <h2>١. المقدمة</h2>
     <p>
-      في علم الكون الحديث، تُفسّر البنية والحركة الكونية عادةً بواسطة الجاذبية النسبية. ومع ذلك، تشير المشاهدات مثل التوسع المتسارع، دوران المجرات، واستقرار البنى الضخمة إلى الحاجة إلى نماذج بديلة. تقترح CPC أن الضغط الكوني المتوازن مع الاحتواء مسؤول عن التوازن الكوني.
+      تفسر النماذج التقليدية الكونية مثل النسبية العامة حركة الكون من خلال الجاذبية، لكن الملاحظات مثل التوسع المتسارع للكون وعدم التوازن بين المادة والمادة المضادة تشير إلى الحاجة إلى نموذج جديد.
     </p>
 
-    <h2>٢. عشرة أدلة علمية تؤيد نظرية CPC</h2>
+    <h2>٢. عشرة أدلة علمية تدعم نظرية CPC</h2>
     <ol>
-      <li><strong>توسع الكون:</strong> المجرات تبتعد، مما يدل على وجود ضغط داخلي ضد الجاذبية.</li>
-      <li><strong>توازن البنية الكونية:</strong> الكون مستقر رغم قوى الجاذبية، مما يشير إلى احتواء منظم.</li>
-      <li><strong>الثقوب السوداء:</strong> حدود ابتلاعها تدل على قوة كبح من الاحتواء.</li>
-      <li><strong>تماثل إشعاع الخلفية:</strong> يعكس ضغطاً موحداً في جميع الاتجاهات.</li>
-      <li><strong>عدم توازن المادة/ضد المادة:</strong> يشير إلى تدخل ضغط احتوائي بعد الانفجار العظيم.</li>
-      <li><strong>ضغط الفراغ الكمومي:</strong> تأثير كازيمير يظهر طاقة ضغط حتى في الفراغ.</li>
-      <li><strong>فشل توحيد الجاذبية مع الكم:</strong> يدعم البحث عن نموذج بديل كـ CPC.</li>
-      <li><strong>حدود الكون:</strong> لا يمكن أن تكون لا نهائية بدون احتواء طاقي.</li>
-      <li><strong>تشبيه معماري:</strong> يشبه الكون فقاعة محاطة بجدار متوازن.</li>
-      <li><strong>أنظمة طبيعية تعتمد الضغط:</strong> من الدماغ إلى المحيطات، الضغط ضروري للتوازن.</li>
+      <li>المجرات تبتعد عن بعضها رغم الجاذبية، مما يدل على ضغط داخلي دافع.</li>
+      <li>الكون لم ينهار رغم الجاذبية، ما يشير إلى وجود احتواء منظم.</li>
+      <li>الثقوب السوداء لها حدود، مما يشير إلى كبح خارجي لامتدادها.</li>
+      <li>إشعاع الخلفية الكونية متجانس بشكل غير مفسر بالجاذبية فقط.</li>
+      <li>غياب التوازن بين المادة والمادة المضادة يعزز فكرة تأثير الاحتواء.</li>
+      <li>تأثير كازيمير يثبت وجود ضغط في الفراغ نفسه.</li>
+      <li>نظرية الجاذبية لم توحد مع ميكانيكا الكم، ما يفتح بابًا لنماذج جديدة.</li>
+      <li>إذا كان الكون محدودًا، فإن ذلك يتطلب قوة احتواء خارجية.</li>
+      <li>يشبه الكون بنية فقاعة غازية محاطة بجدار متوازن.</li>
+      <li>الأنظمة البيولوجية والجيولوجية كلها تحكمها قوانين الضغط.</li>
     </ol>
 
-    <h2>٣. انفجار كوني محتمل</h2>
-    <p>
-      إذا تجاوز الضغط الداخلي قدرة الاحتواء، فقد يحدث انفجار كوني شامل يؤدي إلى تدمير المادة والمجرات.
-    </p>
+    <h2>٣. انفجار الكون — نهاية نظرية</h2>
+    <p>إذا فاق الضغط الداخلي قدرة الاحتواء، فقد يؤدي ذلك إلى انفجار كوني شامل.</p>
 
-    <h2>٤. تأثير المحيطات</h2>
-    <p>
-      باعتبار أن الماء غير قابل للانضغاط، ستكون المحيطات أول من يتأثر بانفجار كهذا، والتأثير سيكون مدمراً.
-    </p>
+    <h2>٤. رد فعل المحيطات</h2>
+    <p>بما أن الماء غير قابل للانضغاط، فإن المحيطات ستكون أول من يتأثر بهذا الانفجار.</p>
 
     <h2>٥. توازن الأجسام في الفضاء</h2>
-    <p>
-      وفقاً لـ CPC، لا تبقى الأجسام عالقة في الفضاء بسبب الجاذبية فقط، بل بسبب توازن الضغط حولها.
-    </p>
+    <p>وفقا لنظرية CPC، الأجسام لا تبقى في مدارها فقط بسبب الجاذبية، بل بسبب توازن الضغط حولها.</p>
 
     <h2>٦. تأثير الضغط على الضوء</h2>
-    <p>
-      سرعة الضوء ومساره يمكن أن تتأثر بتدرجات الضغط، مما يفسر الانزياح الأحمر والعدسات الكونية بطريقة جديدة.
-    </p>
+    <p>الضغط قد يؤثر على سرعة الضوء وانزياحه، مثلًا في ظواهر العدسة الجاذبية والانزياح الأحمر.</p>
 
     <h2>٧. المعادلات النظرية</h2>
+    <p><strong>توازن الضغط:</strong> Pi × A = Fc × A ⇒ Pi = Fc</p>
+    <p><strong>الضغط المداري:</strong> P(r) = P₀ / (1 + k r²)</p>
+    <p><strong>الانزياح الأحمر:</strong> Δλ ∝ ∇P · d</p>
+
+    <h2>٨. قصور النظريات الرئيسية</h2>
     <ul>
-      <li><strong>التوازن:</strong> Pi × A = Fc × A ⇒ Pi = Fc</li>
-      <li><strong>الضغط المداري:</strong> Pr(r) = P₀ / (1 + k r²)</li>
-      <li><strong>الانزياح الأحمر:</strong> Δλ ∝ ∇P · d</li>
+      <li>النسبية العامة تعتمد على طاقة مظلمة غير مثبتة.</li>
+      <li>الجاذبية النيوتونية تتجاهل تأثير الضغط.</li>
+      <li>نماذج الطاقة المظلمة تعتمد على فرضيات غير قابلة للرصد.</li>
+      <li>نظرية الأوتار معقدة وتفتقر للتجربة المباشرة.</li>
     </ul>
 
-    <h2>٨. قصور النظريات الحالية</h2>
+    <h2>٩. مزايا نموذج CPC</h2>
     <ul>
-      <li>النسبية العامة تعتمد على الطاقة المظلمة لتفسير التوسع.</li>
-      <li>الجاذبية النيوتونية تفشل في المقاييس الكونية.</li>
-      <li>نماذج الطاقة المظلمة تفتقر للأدلة التجريبية.</li>
-      <li>نظرية الأوتار معقدة ولا تقدم نتائج واضحة.</li>
+      <li>لا حاجة لطاقة مظلمة.</li>
+      <li>خالي من التفردات.</li>
+      <li>مشابه للأنظمة الطبيعية في التوازن.</li>
     </ul>
 
-    <h2>٩. مزايا نظرية CPC</h2>
-    <ul>
-      <li>تفسير التوسع الكوني دون طاقة مظلمة.</li>
-      <li>خالية من التفردات (singularities).</li>
-      <li>مدعومة بتشبيهات من الطبيعة المعروفة.</li>
-    </ul>
-
-    <h2>١٠. المراجع</h2>
-    <ul>
-      <li>Misner, Thorne, & Wheeler (1973). Gravitation. W. H. Freeman.</li>
-      <li>Padmanabhan (1993). Structure Formation in the Universe.</li>
-      <li>Peebles (1993). Principles of Physical Cosmology.</li>
-      <li>Riess et al. (1998). The Astronomical Journal.</li>
-      <li>Verlinde (2017). SciPost Physics.</li>
-      <li>Zee (2010). Quantum Field Theory in a Nutshell.</li>
-      <li>Weinberg (1972). Gravitation and Cosmology.</li>
-    </ul>
+    <h2>١٠. الخاتمة</h2>
+    <p>يوفر نموذج الضغط والاحتواء الكوني رؤية جديدة لبنية الكون باستخدام مبادئ الضغط، وهو بديل واعد للنماذج التقليدية المبنية على الجاذبية فقط.</p>
 
     <h2>١١. الصور التوضيحية</h2>
     <img src="images/internal-pressure.png" alt="الضغط الداخلي الكوني" />
     <img src="images/cpc-layers.png" alt="طبقات الاحتواء الكوني" />
-    <img src="images/cpc-diagrams.png" alt="رسومات النظرية" />
+    <img src="images/cpc-diagrams.png" alt="رسومات الضغط والاحتواء" />
     <img src="images/cosmic-balance.jpg" alt="توازن كوني" />
     <img src="images/quantum-vacuum.jpg" alt="ضغط الفراغ الكمومي" />
 
-    <p style="text-align: center; margin-top: 40px;">
-      © 2025 عثمان مدني — جميع الحقوق محفوظة
+    <h2>١٢. المراجع</h2>
+    <ul>
+      <li>Misner, Thorne, Wheeler. Gravitation. Freeman, 1973.</li>
+      <li>Padmanabhan. Structure Formation in the Universe. CUP, 1993.</li>
+      <li>Peebles. Principles of Physical Cosmology. Princeton, 1993.</li>
+      <li>Riess et al. Observational Evidence. AJ, 1998.</li>
+      <li>Verlinde. Emergent Gravity. SciPost Physics, 2017.</li>
+      <li>Zee. Quantum Field Theory. Princeton, 2010.</li>
+      <li>Weinberg. Gravitation and Cosmology. Wiley, 1972.</li>
+    </ul>
+
+    <p style="margin-top:40px; font-weight:600; text-align:center;">
+      © 2025 عثمان مدني — جمیع الحقوق محفوظة
     </p>
   </div>
 
